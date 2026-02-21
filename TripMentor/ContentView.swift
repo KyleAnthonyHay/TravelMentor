@@ -24,8 +24,14 @@ struct ContentView: View {
                     Label("Itineraries", systemImage: "square.grid.2x2")
                 }
 
-            ChatView()
+            GlobalTripsView()
                 .tag(3)
+                .tabItem {
+                    Label("Global Trips", systemImage: "person.3.fill")
+                }
+
+            ChatView()
+                .tag(4)
                 .tabItem {
                     Label("Chat", systemImage: "sparkles")
                 }
