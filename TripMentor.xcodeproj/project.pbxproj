@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		856B1ADB2F4CF2B60071FD4B /* ConvexMobile in Frameworks */ = {isa = PBXBuildFile; productRef = 856B1ADA2F4CF2B60071FD4B /* ConvexMobile */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		850D53BE2F475A3A00D2762B /* TripMentor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripMentor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				856B1ADB2F4CF2B60071FD4B /* ConvexMobile in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = TripMentor;
 			packageProductDependencies = (
+				856B1ADA2F4CF2B60071FD4B /* ConvexMobile */,
 			);
 			productName = TripMentor;
 			productReference = 850D53BE2F475A3A00D2762B /* TripMentor.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 850D53B52F475A3A00D2762B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				856B1AD92F4CF2B60071FD4B /* XCRemoteSwiftPackageReference "convex-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 850D53BF2F475A3A00D2762B /* Products */;
 			projectDirPath = "";
@@ -334,6 +343,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		856B1AD92F4CF2B60071FD4B /* XCRemoteSwiftPackageReference "convex-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/get-convex/convex-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		856B1ADA2F4CF2B60071FD4B /* ConvexMobile */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 856B1AD92F4CF2B60071FD4B /* XCRemoteSwiftPackageReference "convex-swift" */;
+			productName = ConvexMobile;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 850D53B62F475A3A00D2762B /* Project object */;
 }
